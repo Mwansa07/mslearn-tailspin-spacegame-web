@@ -58,6 +58,6 @@ steps:
     arguments:  '--no-build --configuration Realease --output $(Build.ArtifactStagingdirectory)/Release'
     zipAfterPublish: true
 
-- task: PublishBuildArtifact@1
+- task: PublishBuildArtifacts@1
   displayName:  'Publish Artifact: drop'
   condition: succeeded()
